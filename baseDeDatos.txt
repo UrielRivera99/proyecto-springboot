@@ -3,12 +3,17 @@ USE mi_estacionamiento;
 
 CREATE TABLE Estacionamiento (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    nombre VARCHAR(255),
     espacios_disponibles INT
 );
 
 CREATE TABLE Camiones (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    marca VARCHAR(255),
-    placas VARCHAR(255)
+    id_camion INT AUTO_INCREMENT PRIMARY KEY,
+    marca_camion VARCHAR(255),
+    placa_camion VARCHAR(255)
+);
+
+CREATE TABLE Autos (
+    id_auto INT AUTO_INCREMENT PRIMARY KEY,
+    marca_auto VARCHAR(255),
+    placa_auto VARCHAR(255)
 );
